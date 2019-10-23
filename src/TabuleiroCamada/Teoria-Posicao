@@ -1,0 +1,8 @@
+															Classe Posição
+															
+ Essa Classe representa uma posição No tabuleiro.
+ Terá os atributos:
+ 	-> Linha
+ 	-> Coluna
+ 
+ Terá também o método "setValores" que receberá uma nova linha e uma nova coluna para serem atribuidas à Posição
