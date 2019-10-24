@@ -1,0 +1,32 @@
+ 															Enum Cor
+ 															
+ Criaremos uma Enumeração "Cor", pois as nossas peças possuem duas cores "Preto" e "Branco", sendo respectivamente nossos atributos
+ nest classe.
+ 
+------------------------------------------------------------------------------------------------------------------------------------
+ 
+															Classe PecaXadrez
+														
+ Essa será uma subClasse de Peça(CamadaTabuleiro), ela terá o atributo "cor" da Enumeração Cor.
+ 
+ Por ser uma subClasse de Peca, teremos que, no construtor, passar como argumento o tabuleiro para a SuperClasse, já que a 
+ superclasse obriga à repassarmos os argumentos do construtor.
+ 
+ Por fim geramos somente o getCor, tornando o atributo "cor" podendo somente ser modificado e não alterado.
+ 
+------------------------------------------------------------------------------------------------------------------------------------
+
+														   Classe PartidaXadrez
+														   
+ Essa classe será o "coração" de nossa partida de xadrez, nela estarão contidas as regras do jogo, declaramos os atributos:
+ 
+ 	-> Tabuleiro tabuleiro -> Pois uma partida de Xadrez possuí um tabuleiro.
+ 	
+ 
+ Já no construtor, instanciamos o tabuleiro com 8 de linha e 8 de coluna, pois quem deve saber as dimensôes do tabuleiro é a classe
+ partidaXadrez.
+ 
+ Criamos também o método getPecas() do tipo PecaXadrez[][] que retorna uma matriz de peças de xadrez correspondentes à essa partida.
+ Note que na nossa classe "Tabuleiro" existe uma matriz de Pecas[][], porém não queremos retornar ela, pois estamos na camada 
+ Xadrez, então fazemos esse método getPecas para nos retornar essa matriz só que no tipo PecaXadrez ao invés de somente Peça.
+ 

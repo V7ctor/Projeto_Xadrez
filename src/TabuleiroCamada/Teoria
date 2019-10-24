@@ -38,7 +38,7 @@
  passadas como argumento, sendo:
  
  Peca = new Peca[linhas][colunas]
-  
  
+ Criamos também um método "getPeca" retornando uma nova linha e coluna para a peça.
   
  
