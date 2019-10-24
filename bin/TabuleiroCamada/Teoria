@@ -1,0 +1,44 @@
+															Classe Posição
+															
+ Essa Classe representa uma posição No tabuleiro.
+ Terá os atributos:
+ 	-> Linha
+ 	-> Coluna
+ 
+ Terá também o método "setValores" que receberá uma nova linha e uma nova coluna para serem atribuidas à Posição.
+ 
+ -----------------------------------------------------------------------------------------------------------------------------------
+ 
+ 															Classe Peça
+
+ Contém um atributo Posição "protected", pois esse tipo de posição ainda não é uma posição do xadrez, e sim, uma posição simples de 
+ matriz, não queremos que essa posicao seja visível à camada de Xadrez, há uma associação entre Tabuleiro e Peca.
+ 
+ Atributos:
+ 	-> posicao (protected)
+ 	-> tabuleiro (private)
+ 	 
+ Ao criarmos o construtor, passamos apenas o tabuleiro como argumento, pois a nossa posiçao será inicialmente nula, significa que 
+ essa peça não foi posta ao tabuleiro ainda.
+ 
+ Já ao passar os métodos Get/Set, passamos apenas o método get do tabuleiro e definimos-o como protected, ou seja, somente classes 
+ e sub-classes dentro do pacote "TabuleiroCamada" poderão acessá-lo.
+------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 															Classe Tabuleiro
+ 															
+ 1 Tabuleiro possui a quantidade de linhas e colunas, e também uma matriz de peças, sendo:
+ 
+ Atributos:
+ 	-> linhas
+ 	-> Colunas
+ 	-> Peca[][]
+ 	
+ No construtor definimos passamos as linhas e colunas como argumentos e definimos a matriz de peca com tamanho de linhas e colunas
+ passadas como argumento, sendo:
+ 
+ Peca = new Peca[linhas][colunas]
+  
+ 
+  
+ 
