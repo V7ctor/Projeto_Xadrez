@@ -1,0 +1,12 @@
+															Classe Rei
+														
+ Essa classe Extends de PecaXadrez e repassamos a chamada do construtor para a superclasse os atributos:
+ 	-> Tabuleiro
+ 	-> Cor
+ 	
+ 	
+------------------------------------------------------------------------------------------------------------------------------------
+
+															Classe Torre
+															
+ Segue-se a mesma lógica de super classe de Rei.

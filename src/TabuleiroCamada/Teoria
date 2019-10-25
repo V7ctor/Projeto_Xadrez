@@ -40,5 +40,8 @@
  Peca = new Peca[linhas][colunas]
  
  Criamos também um método "getPeca" retornando uma nova linha e coluna para a peça.
+ 
+ Já o método "colocarPeca()" será responsável por colocar uma peça no tabuleiro. Ele receberá uma Posição e apartir dessa posição
+ da nossa matriz "Peca[][]" será atribuida a peça.
   
  

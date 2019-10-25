@@ -30,3 +30,4 @@
  Note que na nossa classe "Tabuleiro" existe uma matriz de Pecas[][], porém não queremos retornar ela, pois estamos na camada 
  Xadrez, então fazemos esse método getPecas para nos retornar essa matriz só que no tipo PecaXadrez ao invés de somente Peça.
  
+ Criamos o método "iniciandoPartida()" responsável por iniciar a partida,
