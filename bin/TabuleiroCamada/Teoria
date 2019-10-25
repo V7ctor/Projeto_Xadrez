@@ -43,5 +43,18 @@
  
  Já o método "colocarPeca()" será responsável por colocar uma peça no tabuleiro. Ele receberá uma Posição e apartir dessa posição
  da nossa matriz "Peca[][]" será atribuida a peça.
+ 
+ 	-> Excecões:
+ 	
+ 	Pode ocorrer uma excessão do tipo se a posição que colocarmos como argumento existe ou não no tabulerio, para tratar disso 
+ 	faremos o método posicaoExiste(), já se você quiser colocar uma peça na onde já tem uma, teremos um método pecaExiste() para
+ 	tratar disso.
+ 
   
+------------------------------------------------------------------------------------------------------------------------------------
+
+														Classe TabuleiroExcecao
+ 
+ Será uma classe especial para tratamento personalizado de possíveis exceções que podem vir a ocorrerem todas as classes da camada
+ de tabuleiro, ela será uma classe Filha de RunTimeException(Torna as exceções opcionais à serem tratadas).
  
