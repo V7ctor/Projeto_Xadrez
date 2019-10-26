@@ -30,4 +30,32 @@
  Note que na nossa classe "Tabuleiro" existe uma matriz de Pecas[][], porém não queremos retornar ela, pois estamos na camada 
  Xadrez, então fazemos esse método getPecas para nos retornar essa matriz só que no tipo PecaXadrez ao invés de somente Peça.
  
- Criamos o método "iniciandoPartida()" responsável por iniciar a partida,
+ Criamos o método "iniciandoPartida()" responsável por iniciar a partida.
+ 
+------------------------------------------------------------------------------------------------------------------------------------
+
+														  Classe PosicaoXadrez
+														  
+ 
+ Responsável por transformar as posições de matriz para posições do xadrez, ex: Posição(0,1) é equivalente à Posição(8,b) e assim 
+ por diante. Terá os atributos:
+ 	-> coluna (char)
+ 	-> linha (int)
+ 
+ Terá o método toPosicao() para converter essa posição de xadrez para posição comum e também o método principal 
+ "paraPosicaoXadrez()" que será responsável por fazer a conversão de posição simples de matriz para posição de xadrez.
+------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 														 Classe ExcecaoXadrez
+ 														 
+ Segue-se o mesmo padrão de uma classe personalizada de tratamento de Exceções.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
