@@ -2,7 +2,6 @@ package XadrezCamada;
 
 import Pecas.Rei;
 import Pecas.Torre;
-import TabuleiroCamada.Posicao;
 import TabuleiroCamada.Tabuleiro;
 
 public class PartidaXadrez {
@@ -31,8 +30,18 @@ public class PartidaXadrez {
 	
 	private void iniciandoPartida() {
 		
-		colocarPeca('b',6, new Torre(tabuleiro, Cor.BRANCO));
-		colocarPeca('e',8,new Rei(tabuleiro, Cor.PRETO));
-		colocarPeca('e',1,new Rei(tabuleiro, Cor.PRETO));
+		colocarPeca('c', 1, new Torre(tabuleiro, Cor.BRANCO));
+		colocarPeca('c', 2, new Torre(tabuleiro, Cor.BRANCO));
+		colocarPeca('d', 2, new Torre(tabuleiro, Cor.BRANCO));
+        colocarPeca('e', 2, new Torre(tabuleiro, Cor.BRANCO));
+        colocarPeca('e', 1, new Torre(tabuleiro, Cor.BRANCO));
+        colocarPeca('d', 1, new Rei(tabuleiro, Cor.BRANCO));
+
+        colocarPeca('c', 7, new Torre(tabuleiro, Cor.PRETO));
+        colocarPeca('c', 8, new Torre(tabuleiro, Cor.PRETO));
+        colocarPeca('d', 7, new Torre(tabuleiro, Cor.PRETO));
+        colocarPeca('e', 7, new Torre(tabuleiro, Cor.PRETO));
+        colocarPeca('e', 8, new Torre(tabuleiro, Cor.PRETO));
+        colocarPeca('d', 8, new Rei(tabuleiro, Cor.PRETO));
 	}
 }
