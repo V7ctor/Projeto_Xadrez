@@ -1,7 +1,11 @@
 package Aplicacao;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 import XadrezCamada.Cor;
 import XadrezCamada.PecaXadrez;
+import XadrezCamada.PosicaoXadrez;
 
 public class UI {
 
@@ -24,6 +28,17 @@ public class UI {
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 	
+	public static PosicaoXadrez lerPosicaoXadrez(Scanner sc) {
+		try {
+			String leitura = sc.nextLine();
+			char coluna = leitura.charAt(0);
+			int linha = Integer.parseInt(leitura.substring(1));
+			return new PosicaoXadrez(coluna, linha);
+		}catch (RuntimeException e) {
+			throw new InputMismatchException("Erro ao ler Posição de Xadrez: Formatos válidos são de \"a1\" à \"h8\"!");
+			// InputMismatchException -> Trata possíveis erros de entrada de dados.
+		}
+	}
 	public static void printarTabuleiro(PecaXadrez[][] pecas) {
 		
 		for (int i = 0; i < pecas.length; i++) {

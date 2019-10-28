@@ -49,6 +49,10 @@
  	Pode ocorrer uma excessão do tipo se a posição que colocarmos como argumento existe ou não no tabulerio, para tratar disso 
  	faremos o método posicaoExiste(), já se você quiser colocar uma peça na onde já tem uma, teremos um método pecaExiste() para
  	tratar disso.
+ 	
+ Para remover uma peça do tabuleiro, utilizamos o método removerPeca(), nele passamos uma posição e primeiro verificamos se ela existe
+ no tabuleiro e se na posição existe peça, caso passe pela programação defensiva, passamos como null essa posicao de peça na matriz e
+ no tabuleiro.
  
   
 ------------------------------------------------------------------------------------------------------------------------------------
