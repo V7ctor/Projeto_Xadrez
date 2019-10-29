@@ -14,6 +14,9 @@
  
  Por fim geramos somente o getCor, tornando o atributo "cor" podendo somente ser modificado e não alterado.
  
+ Teremos o método "goPecaOponente()" para verificar se no possível movimento de uma peça existe uma peca adversária, caso exista
+ essa peça pode capturá-la e ir até tua posição.
+ 
 ------------------------------------------------------------------------------------------------------------------------------------
 
 														   Classe PartidaXadrez
