@@ -23,6 +23,15 @@
  
  Já ao passar os métodos Get/Set, passamos apenas o método get do tabuleiro e definimos-o como protected, ou seja, somente classes 
  e sub-classes dentro do pacote "TabuleiroCamada" poderão acessá-lo.
+ 
+ Teremos a operação "possiveisMovimentos()" e será uma operação abstrata pois, sendo Peça uma classe genérica, cada classe específica
+ dela terá seu tipo de implementação baseada no método abstrato.
+ 
+ Teremos a operação "possoMover()" que verificará se realmente é possível se mover em dada instrução.
+ 
+ Há também o método "pecaPresa()" que verificará se é possível a peça se mover ainda ou se está presa.
+ 
+ Com isso tornamos nossa classe Peça Abstrata.
 ------------------------------------------------------------------------------------------------------------------------------------
  
  															Classe Tabuleiro

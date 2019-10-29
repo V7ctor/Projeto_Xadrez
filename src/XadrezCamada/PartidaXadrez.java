@@ -38,6 +38,9 @@ public class PartidaXadrez {
 		if (!tabuleiro.pecaExistente(posicao)) {
 			throw new ExcecaoXadrez("Não existe peça na posição de Origem!");
 		}
+		if (!tabuleiro.getPeca(posicao).pecaPresa()) {
+			throw new ExcecaoXadrez("Nao existe movimentos possiveis para a peca escolhida!");
+		}
 	}
 	
 	private Peca fazerMover(Posicao origem, Posicao destino) {
