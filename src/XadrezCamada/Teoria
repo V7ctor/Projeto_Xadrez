@@ -35,6 +35,8 @@
  
  Criamos o método "iniciandoPartida()" responsável por iniciar a partida.
  
+ Também teremos o método "movimentosPossiveis()" que será responsável por mostrar ao usuário os possíveis movimentos de sua Peça.
+ 
 ------------------------------------------------------------------------------------------------------------------------------------
 
 														  Classe PosicaoXadrez

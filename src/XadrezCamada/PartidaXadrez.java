@@ -26,6 +26,12 @@ public class PartidaXadrez {
 		return mat;
 	}
 	
+	public boolean[][] movimentosPossiveis(PosicaoXadrez posicaoOrigem){
+		Posicao posicao = posicaoOrigem.toPosicao();
+		validarPosicaoOrigem(posicao);
+		return tabuleiro.getPeca(posicao).possiveisMovimentos();
+	}
+	
 	public PecaXadrez executarMovimento(PosicaoXadrez PosicaoOrigem, PosicaoXadrez posicaoDestino) {
 		Posicao origem = PosicaoOrigem.toPosicao();
 		Posicao destino = posicaoDestino.toPosicao();
@@ -37,7 +43,7 @@ public class PartidaXadrez {
 	
 	private void validarPosicaoOrigem(Posicao posicao) {
 		if (!tabuleiro.pecaExistente(posicao)) {
-			throw new ExcecaoXadrez("Não existe peça na posição de Origem!");
+			throw new ExcecaoXadrez("Nao existe peca na posicao de Origem!");
 		}
 		if (!tabuleiro.getPeca(posicao).pecaPresa()) {
 			throw new ExcecaoXadrez("Nao existe movimentos possiveis para a peca escolhida!");
