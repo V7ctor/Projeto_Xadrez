@@ -37,6 +37,9 @@
  
  Também teremos o método "movimentosPossiveis()" que será responsável por mostrar ao usuário os possíveis movimentos de sua Peça.
  
+ Temos também o método "trocarJogador()" que é responsável por trocar de jogador à cada turno. Por padrão, a peça branca começa jogando
+ primeiro.
+ 
 ------------------------------------------------------------------------------------------------------------------------------------
 
 														  Classe PosicaoXadrez
