@@ -1,6 +1,5 @@
 package Aplicacao;
 
-import java.awt.print.Paper;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -57,6 +56,9 @@ public class UI {
 		System.out.println();
 		System.out.println("Turno: "+partida.getTurno());
 		System.out.println("Esperando o jogador "+partida.getJogadorAtual()+"!");
+		if (partida.getCheck()) {
+			System.out.println("CHECK!");
+		}
 	}
 	
 	public static void printarTabuleiro(PecaXadrez[][] pecas) {

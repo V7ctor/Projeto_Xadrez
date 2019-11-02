@@ -19,7 +19,7 @@ public class Programa {
 		List<PecaXadrez> capturadas = new ArrayList<>();
 		
 		while (true) {
-			try {
+		   try {
 				UI.limparTela();
 				UI.printarPartida(partida, capturadas);
 				System.out.println();
@@ -38,7 +38,9 @@ public class Programa {
 				PecaXadrez pecaCapturada = partida.executarMovimento(origem, destino);
 				if (pecaCapturada != null) {
 					capturadas.add(pecaCapturada);
+			
 				}
+			
 			}catch(ExcecaoXadrez e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
@@ -46,6 +48,7 @@ public class Programa {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
+			
 		}
 	}
 }

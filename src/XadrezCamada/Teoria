@@ -58,10 +58,15 @@
  														 
  Segue-se o mesmo padrão de uma classe personalizada de tratamento de Exceções.
  
+ ------------------------------------------------------------------------------------------------------------------------------------
  
+ 														 Lógica de Check
+ 														 
+ Cheque significa que o seu rei está ameaçado por uma peça oponente, logo ele deve sair de cheque, caso não consiga sair, é check-mate.
+ Também não podemos executar um movimento que coloque nosso rei em check.
  
- 
- 
+ Isso significa que devemos identificar quando uma peça põe o rei adversário em cheque e quando o rei não pode se mover, devemos 
+ identificar ao mover o rei, se o jogador está pondo sua peça em check também.
  
  
  
