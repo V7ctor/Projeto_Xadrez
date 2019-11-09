@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import Pecas.Peao;
 import Pecas.Rei;
 import Pecas.Torre;
 import TabuleiroCamada.Peca;
@@ -196,12 +197,30 @@ public class PartidaXadrez {
 	
 	private void iniciandoPartida() {
 		
-		colocarPeca('h', 7, new Torre(tabuleiro, Cor.BRANCO));
-		colocarPeca('d', 1, new Torre(tabuleiro, Cor.BRANCO));
-		colocarPeca('e', 1, new Rei(tabuleiro, Cor.BRANCO));
-
-        colocarPeca('b', 8, new Torre(tabuleiro, Cor.PRETO));
-        colocarPeca('a', 8, new Rei(tabuleiro, Cor.PRETO));
+			colocarPeca('a', 1, new Torre(tabuleiro, Cor.BRANCO));
+			colocarPeca('e', 1, new Rei(tabuleiro, Cor.BRANCO));
+			colocarPeca('h', 1, new Torre(tabuleiro, Cor.BRANCO));
+			colocarPeca('a', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('b', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('c', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('d', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('e', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('f', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('g', 2, new Peao(tabuleiro, Cor.BRANCO));
+	        colocarPeca('h', 2, new Peao(tabuleiro, Cor.BRANCO));
+		
+		
+	        colocarPeca('a', 8, new Torre(tabuleiro, Cor.PRETO));
+	        colocarPeca('e', 8, new Rei(tabuleiro, Cor.PRETO));
+	        colocarPeca('h', 8, new Torre(tabuleiro, Cor.PRETO));
+	        colocarPeca('a', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('b', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('c', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('d', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('e', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('f', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('g', 7, new Peao(tabuleiro, Cor.PRETO));
+	        colocarPeca('h', 7, new Peao(tabuleiro, Cor.PRETO));
        
 	}
 }
